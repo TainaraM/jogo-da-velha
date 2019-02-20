@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+}
+
+#mostrador {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    width: 40%;
+}
+
+p {
+    color: brown ;
+    letter-spacing: 5px;
+    margin-right: 10px;
+    margin: 20px;
+}
+
+img {
+    border: 0px;
+    height: 80px;
+}
+
+.espacos {
+    border: 4px solid indigo;
+    height: 130px;
+    text-align: center;
+    padding-top: 8px;
+    width: 130px;  
+}
+
+section {
+    background-color: rgb(25, 73, 112);
+    display: flex;
+    justify-content: center;
+}
+
+.tabuleiro {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+}
+
+footer p {
+    color: black;
+    text-align: center;
+}

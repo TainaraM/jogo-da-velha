@@ -52,7 +52,7 @@ function inicializarEspacos() {
     }
 }
 
-function verificarVencedor(){
+async function verificarVencedor(){
 let a1 = document.getElementById("a1").getAttribute("jogada");
 let a2 = document.getElementById("a2").getAttribute("jogada");
 let a3 = document.getElementById("a3").getAttribute("jogada");
@@ -80,10 +80,16 @@ if(((a1 == b1 && a1 == c1) || (a1 == a2 && a1 == a3 ) || (a1==b2 && a1 == c3 )) 
 if (vencedor !="") {
     gameOver = true;
 
+    await sleep(50);
+
     alert("O ganhador foi o: '" + vencedor + "'");
  
 }
 
+}
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 
